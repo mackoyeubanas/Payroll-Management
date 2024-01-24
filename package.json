@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo rror: no test specified && exit 1",
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "dev": "nodemon index.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build"
   },
   "author": "Deepak",
   "license": "ISC",
