@@ -6,10 +6,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "NODE_ENV=production node_modules/react-scripts/bin/index.js start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "NODE ",
+  
     "eslint-check": "npx eslint .",
     "eslint-fix": "npx eslint --fix .",
     "prettier-check": "npx prettier --check .",
