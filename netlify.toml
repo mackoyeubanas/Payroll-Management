@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "/https://app.netlify.com/sites/interiorbuilder/deploys/65ad95435d8dbf0008281627"
-  to = "/https://app.netlify.com/sites/interiorbuilder/deploys/65ad95435d8dbf0008281627"
+  from = "/https://65b6cab3cdadafa996c69833--onlinepayroll.netlify.app/"
+  to = "/https://65b6cab3cdadafa996c69833--onlinepayroll.netlify.app/"
   status = 301
   force = false
   query = {path = ":path"}
