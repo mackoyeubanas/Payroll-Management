@@ -1,16 +1,11 @@
-[[redirects]]
-  from = "https://main--onlinepayroll.netlify.app"
-  to = "https://main--onlinepayroll.netlify.app"
-  status = 301
-  force = false
-  query = {path = ":path"}
-  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+[[headers]]
+  for = "/*"
+  [headers.values]
+  cache-control = '''
+  max-age=0,
+  no-cache,
+  no-store,
+  must-revalidate'''
 
-## This rule redirects to an external API, signing requests with a secret
-[[redirects]]
-  from = "/search"
-  to = "https://main--onlinepayroll.netlify.app"
-  status = 200
-  force = true # COMMENT: ensure that we always redirect
-  headers = {X-From = "Netlify"}
-  signed = "API_SIGNATURE_TOKEN"
+[context.staging]
+  command = "npm run build && cp ./custom-headers/_stagingHeaders ./dist/_headers"
