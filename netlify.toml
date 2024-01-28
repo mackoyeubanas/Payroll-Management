@@ -10,8 +10,12 @@
 [context.staging]
   command = "npm run build && cp ./custom-headers/_stagingHeaders ./dist/_headers"
 
+[build]
+  command = "CI='' npm run build"
+  publish = "/build"
+  base ="/"
+
 [[redirects]]
-from = "/*"
-to = "/m"
-status = 301
-force = true
+  from = "/*"
+  to = "/index.html"
+  status = 200
