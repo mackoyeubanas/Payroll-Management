@@ -9,3 +9,9 @@
 
 [context.staging]
   command = "npm run build && cp ./custom-headers/_stagingHeaders ./dist/_headers"
+
+[[redirects]]
+from = "/_next/static/*"
+to = "/static/:splat"
+status = 301
+force = true
