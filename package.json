@@ -12,7 +12,7 @@
     "eslint-fix": "npx eslint --fix .",
     "prettier-check": "npx prettier --check .",
     "prettier-fix": "npx prettier --write .",
-    "src" = "index.js"
+    "src": = "index.js"
   },
   "name": "Payroll-System",
     "version": "0.1.0",
