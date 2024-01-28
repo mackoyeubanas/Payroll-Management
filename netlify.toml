@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "https://main--onlinepayroll.netlify.app/"
-  to = "https://main--onlinepayroll.netlify.app/"
+  from = "https://main--onlinepayroll.netlify.app"
+  to = "https://main--onlinepayroll.netlify.app"
   status = 301
   force = false
   query = {path = ":path"}
@@ -9,7 +9,7 @@
 ## This rule redirects to an external API, signing requests with a secret
 [[redirects]]
   from = "/search"
-  to = "https://main--onlinepayroll.netlify.app/"
+  to = "https://main--onlinepayroll.netlify.app"
   status = 200
   force = true # COMMENT: ensure that we always redirect
   headers = {X-From = "Netlify"}
