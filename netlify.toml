@@ -1,1 +1,16 @@
+[[redirects]]
+  from = "/https://app.netlify.com/sites/interiorbuilder/deploys/65ad95435d8dbf0008281627"
+  to = "/https://app.netlify.com/sites/interiorbuilder/deploys/65ad95435d8dbf0008281627"
+  status = 301
+  force = false
+  query = {path = ":path"}
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
 
+## This rule redirects to an external API, signing requests with a secret
+[[redirects]]
+  from = "/search"
+  to = "https://65b6cab3cdadafa996c69833--onlinepayroll.netlify.app/"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+  headers = {X-From = "Netlify"}
+  signed = "API_SIGNATURE_TOKEN"
