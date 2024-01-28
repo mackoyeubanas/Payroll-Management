@@ -1,1 +1,6 @@
-"CI= "npm run test && npm run build"
+from = "https://main--onlinepayroll.netlify.app/"
+  to = "https://main--onlinepayroll.netlify.app/"
+  status = 301
+  force = false
+  query = {path = ":path"}
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
